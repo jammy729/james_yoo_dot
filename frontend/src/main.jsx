@@ -5,10 +5,10 @@ import "../scss/index.scss";
 //Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Index from "./index";
-import About from "../pages/about";
-import Contact from "../pages/contact";
-import Work from "../pages/work";
-import Work from "../pages/about";
+import About from "./routes/about";
+import Contact from "./routes/contact";
+import Work from "./routes/work";
+import WorkPiece from "./routes/work_piece";
 
 import ErrorPage from "./routes/404";
 
