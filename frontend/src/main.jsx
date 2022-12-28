@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "../scss/index.scss";
+import "../scss/root.scss";
 
 //Router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -9,7 +9,6 @@ import About from "./routes/about";
 import Contact from "./routes/contact";
 import Work from "./routes/work";
 import WorkPiece from "./routes/work_piece";
-
 import ErrorPage from "./routes/404";
 
 const router = createBrowserRouter([
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
     element: <Work />,
   },
   {
-    path: "work/:workId",
+    path: "work/:id",
     element: <WorkPiece />,
   },
 ]);
