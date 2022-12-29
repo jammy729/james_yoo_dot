@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 import Home from "./routes/home";
 import About from "./routes/about";
 import Contact from "./routes/contact";
-import Work from "./routes/Work";
+import Work from "./routes/work";
 import WorkPiece from "./routes/work_piece";
 
 import ErrorPage from "./routes/404";
