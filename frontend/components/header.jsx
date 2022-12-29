@@ -40,7 +40,7 @@ const header = () => {
                 <div className="mobile_items">
                   <Link to={data.path}>
                     <div key={data.id} className="navbar_items">
-                      <h3>{data.name}</h3>
+                      <h2>{data.name}</h2>
                     </div>
                   </Link>
                 </div>
