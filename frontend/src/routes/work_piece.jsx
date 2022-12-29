@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-const work_piece = () => {
+const WorkPiece = () => {
   const { id } = useParams();
   return (
     <>
@@ -10,4 +10,4 @@ const work_piece = () => {
   );
 };
 
-export default work_piece;
+export default WorkPiece;
