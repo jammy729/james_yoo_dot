@@ -1,0 +1,40 @@
+section#work_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  gap: 10px;
+  padding: 0;
+
+  .work_container {
+    flex: 0 0 95%;
+    position: relative;
+    .work_text {
+      z-index: 3;
+      position: relative;
+      * {
+        color: white;
+      }
+      .work_title {
+        padding: 1.3rem;
+      }
+      .work_excerpt {
+        padding: 1.3rem;
+      }
+    }
+    @media only screen and (min-width: $screen-md-min) {
+      flex: 0 0 48%;
+    }
+    @media only screen and (min-width: $screen-xlg-min) {
+      flex: 0 0 32%;
+    }
+    .work_item {
+      background-size: cover;
+      height: 30vh;
+      @media only screen and (min-width: $screen-md-min) {
+        height: 25vh;
+      }
+    }
+  }
+}

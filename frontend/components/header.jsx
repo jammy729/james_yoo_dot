@@ -29,25 +29,32 @@ const header = () => {
           ))}
         </div>
         <div className="mobile_menu" onClick={() => setShow(!show)}>
-          <div className="hamburger_menu"></div>
-          <div className="hamburger_menu"></div>
-          <div className="hamburger_menu"></div>
+          <div
+            className="hamburger_menu"
+            style={{ backgroundColor: show ? "white" : "black" }}
+          ></div>
+          <div
+            className="hamburger_menu"
+            style={{ backgroundColor: show ? "white" : "black" }}
+          ></div>
+          <div
+            className="hamburger_menu"
+            style={{ backgroundColor: show ? "white" : "black" }}
+          ></div>
         </div>
-        <div className="mobile_drawer">
-          {show && (
-            <div>
-              {navbarItems.map((data) => (
-                <div className="mobile_items">
-                  <Link to={data.path}>
-                    <div key={data.id} className="navbar_items">
-                      <h2>{data.name}</h2>
-                    </div>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        {show && (
+          <div className="mobile_drawer">
+            {navbarItems.map((data) => (
+              <div className="mobile_items">
+                <Link to={data.path}>
+                  <div key={data.id} className="navbar_items">
+                    <h2>{data.name}</h2>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </header>
   );
