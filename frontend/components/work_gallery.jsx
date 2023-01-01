@@ -4,21 +4,24 @@ const workGalleryItems = [
   {
     title: "Brixwork Real Estate Marketing",
     path: "/work/brixwork",
-    excerpt: "Develop ",
+    excerpt:
+      "Develop IDX integrated websites that fit the brand guidelines for Real Estate professionals",
     image:
       "https://james-yoo-portfolio.vercel.app/static/media/cover.a3f6d2ab094c3295cae6.png",
   },
   {
     title: "World Institution Database",
     path: "/work/institution-database",
-    excerpt: "This is excerpt",
+    excerpt:
+      "A functional web application that allows users to browse through a list of institutions.",
     image:
       "https://james-yoo-portfolio.vercel.app/static/media/cover-worldinstitution.ac97395f69d35942d4ee.png",
   },
   {
     title: "Educational Visual Analytics",
     path: "/work/visual-analytics",
-    excerpt: "This is excerpt",
+    excerpt:
+      "Designed and implemented an interactive visualization for multidimensional data.",
     image:
       "https://james-yoo-portfolio.vercel.app/static/media/cover2.a91e287afd734e628728.png",
   },
@@ -44,6 +47,11 @@ const work_gallery = () => {
                   </div>
                   <div className="work_excerpt" id="h5_style">
                     {data.excerpt}
+                  </div>
+                  <div className="btn_container">
+                    <a href={data.path} className="btn primary">
+                      View Work
+                    </a>
                   </div>
                 </div>
               </div>

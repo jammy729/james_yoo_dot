@@ -15,14 +15,17 @@ const index = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/work/:id" element={<WorkPiece />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/:id" element={<WorkPiece />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </main>
+
       <Footer />
     </BrowserRouter>
   );

@@ -4,6 +4,20 @@
   box-sizing: border-box; // 1
 }
 
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
 body,
 html {
   overscroll-behavior-y: none;

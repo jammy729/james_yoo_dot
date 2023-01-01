@@ -13,14 +13,27 @@ section#work_gallery {
     .work_text {
       z-index: 3;
       position: relative;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.3rem;
       * {
         color: white;
       }
       .work_title {
-        padding: 1.3rem;
-      }
-      .work_excerpt {
-        padding: 1.3rem;
+        &#h2_style {
+          margin-bottom: 0;
+          font-size: 1.8rem;
+          padding-bottom: 0;
+          @media only screen and (min-width: $screen-md-min) {
+            font-size: 2rem;
+          }
+          @media only screen and (min-width: $screen-lg-min) {
+            font-size: 2rem;
+            padding-bottom: 0;
+          }
+        }
       }
     }
     @media only screen and (min-width: $screen-md-min) {
@@ -31,7 +44,7 @@ section#work_gallery {
     }
     .work_item {
       background-size: cover;
-      height: 30vh;
+      height: 36vh;
       @media only screen and (min-width: $screen-md-min) {
         height: 25vh;
       }
