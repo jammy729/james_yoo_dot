@@ -20,7 +20,7 @@ header {
     .navbar_menu {
       display: none;
       gap: 20px;
-      @media only screen and (min-width: $screen-sm-min) {
+      @media only screen and (min-width: $screen-md-min) {
         display: inline-flex;
       }
     }
@@ -36,7 +36,7 @@ header {
       justify-content: space-around;
       padding: 0;
       box-sizing: border-box;
-      @media only screen and (min-width: $screen-sm-min) {
+      @media only screen and (min-width: $screen-md-min) {
         display: none;
       }
       .hamburger_menu {
@@ -62,7 +62,7 @@ header {
         color: white;
         text-align: center;
       }
-      @media only screen and (min-width: $screen-sm-min) {
+      @media only screen and (min-width: $screen-md-min) {
         display: none;
       }
 

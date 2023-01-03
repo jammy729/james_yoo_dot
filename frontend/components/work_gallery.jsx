@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import data from "../data/gallery.json";
 const workGalleryItems = [
   {
     title: "Brixwork Real Estate Marketing",
@@ -31,8 +32,8 @@ const work_gallery = () => {
   return (
     <React.Fragment>
       <section id="work_gallery" className="container-fluid">
-        {workGalleryItems.map((data) => (
-          <div className="work_container">
+        {workGalleryItems.map((data, workIndex) => (
+          <div className="work_container" key={workIndex}>
             <Link to={data.path}>
               <div
                 className="work_item"
@@ -49,9 +50,7 @@ const work_gallery = () => {
                     {data.excerpt}
                   </div>
                   <div className="btn_container">
-                    <a href={data.path} className="btn primary">
-                      View Work
-                    </a>
+                    <div className="btn primary">View Work</div>
                   </div>
                 </div>
               </div>

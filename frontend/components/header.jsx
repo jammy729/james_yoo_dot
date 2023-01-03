@@ -20,11 +20,9 @@ const header = () => {
           </Link>
         </div>
         <div className="navbar_menu">
-          {navbarItems.map((data) => (
-            <Link to={data.path}>
-              <div key={data.id} className="navbar_items">
-                {data.name}
-              </div>
+          {navbarItems.map((data, index) => (
+            <Link to={data.path} key={index}>
+              <div className="navbar_items">{data.name}</div>
             </Link>
           ))}
         </div>
@@ -44,10 +42,10 @@ const header = () => {
         </div>
         {show && (
           <div className="mobile_drawer">
-            {navbarItems.map((data) => (
+            {navbarItems.map((data, mobileIndex) => (
               <div className="mobile_items">
-                <Link to={data.path}>
-                  <div key={data.id} className="navbar_items">
+                <Link to={data.path} key={mobileIndex}>
+                  <div className="navbar_items">
                     <h2>{data.name}</h2>
                   </div>
                 </Link>

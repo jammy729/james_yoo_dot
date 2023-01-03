@@ -1,7 +1,11 @@
 import React from "react";
-
+import WorkGallery from "../../components/work_gallery";
 const work = () => {
-  return <div>work</div>;
+  return (
+    <React.Fragment>
+      <WorkGallery />
+    </React.Fragment>
+  );
 };
 
 export default work;

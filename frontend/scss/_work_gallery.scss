@@ -10,6 +10,7 @@ section#work_gallery {
   .work_container {
     flex: 0 0 95%;
     position: relative;
+    overflow: hidden;
     .work_text {
       z-index: 3;
       position: relative;
@@ -44,9 +45,18 @@ section#work_gallery {
     }
     .work_item {
       background-size: cover;
-      height: 36vh;
+      height: 20rem;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 50% 50%;
+      transition: all 0.5s;
+      &:hover {
+        background-size: 105%;
+      }
+
       @media only screen and (min-width: $screen-md-min) {
-        height: 25vh;
+        height: 23rem;
       }
     }
   }

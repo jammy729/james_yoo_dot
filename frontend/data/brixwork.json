@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "id": "brixwork",
+      "work": "Brixwork Real Estate Marketing",
+      "title": "Leslie McConnell - Brixwork Real Estate Marketing",
+      "cover-image": "https://james-yoo-portfolio.vercel.app/static/media/cover.a3f6d2ab094c3295cae6.png",
+      "type": "Web Development",
+      "skills": "HTML, SCSS, jQuery, PHP, AWS S3, Website QA, DevOps"
+    }
+  ]
+}
