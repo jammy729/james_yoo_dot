@@ -1,0 +1,13 @@
+section#work_layout {
+  .work_layout__container {
+    width: 80%;
+    margin: 0 auto;
+    .work_header {
+      display: flex;
+      align-items: baseline;
+    }
+    .work__tags > div {
+      padding-bottom: 10px;
+    }
+  }
+}
