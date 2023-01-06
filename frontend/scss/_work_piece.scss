@@ -1,10 +1,12 @@
 section#work_layout {
   .work_layout__container {
-    width: 80%;
-    margin: 0 auto;
     .work_header {
       display: flex;
+      flex-direction: column;
       align-items: baseline;
+      @media only screen and (min-width: $screen-md-min) {
+        flex-direction: row;
+      }
     }
     .work__tags > div {
       padding-bottom: 10px;

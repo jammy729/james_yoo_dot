@@ -6,12 +6,12 @@ const work_piece = () => {
   const { id } = useParams();
   const [detail, setDetail] = useState([]);
   const [error, setError] = useState(null);
+  const count = 10;
 
   const fetchDetails = () => {
     axios
       .get(`../../data/${id}.json`)
       .then((response) => {
-        console.log(response);
         setDetail(response.data.data);
       })
       .catch((error) => {
@@ -22,10 +22,16 @@ const work_piece = () => {
   useEffect(() => {
     fetchDetails();
   }, []);
-
+  let index = 0;
+  let counter;
+  while (index < 10) {
+    counter = index;
+    index++;
+    console.log(counter);
+  }
   return (
     <React.Fragment>
-      <section id="work_layout" className="container-fluid">
+      <section id="work_layout" className="container-layout">
         {detail.map((data, index) => (
           <div className="work_layout__container" key={index}>
             {/* header */}
@@ -53,7 +59,25 @@ const work_piece = () => {
                 <span className="badge">Skills</span>
                 <span className="badge_skills">{data.skills}</span>
               </div>
+              <div className="work_source">
+                <span className="badge">Source</span>
+                <span className="badge_skills">
+                  <Link to={data.source}>{data.source_tag}</Link>
+                </span>
+              </div>
             </div>
+            {/* work descriptions  */}
+            <hr />
+            {data.writing.heading && (
+              <>
+                <div>
+                  <img src={data.writing.image} alt="" />
+                  <h3>{data.writing.heading}</h3>
+                  <p>{data.writing.text1}</p>
+                </div>
+                <hr />
+              </>
+            )}
           </div>
         ))}
       </section>
