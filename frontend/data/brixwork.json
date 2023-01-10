@@ -10,11 +10,27 @@
       "skills": "HTML, SCSS, jQuery, PHP, AWS S3, Website QA, DevOps",
       "source": "lesliemcconnell.ca",
       "source_tag": "Leslie McConnell's Website",
-      "writing": {
-        "heading1": "Overview",
-        "text1": "I had the amazing opportunity to work at the Brixwork Real Estate Marketing as a Front-end Web Developer for 4 months (Late August ~ Late December) for Fall 2022. The company creates carefully crafted websites for real estate professionals across North America. As someone who loves and take huge pride in craftmanship, this role was perfect for me to learn and grow as a developer. My job did not only consist of web development but also SEO on-site engineering, glimpse of DevOps and maintain cPanel host at root level.",
-        "heading2": "Overview",
-        "text2": "I had the amazing opportunity to work at the Brixwork Real Estate Marketing as a Front-end Web Developer for 4 months (Late August ~ Late December) for Fall 2022. The company creates carefully crafted websites for real estate professionals across North America. As someone who loves and take huge pride in craftmanship, this role was perfect for me to learn and grow as a developer. My job did not only consist of web development but also SEO on-site engineering, glimpse of DevOps and maintain cPanel host at root level."
+      "section_0": {
+        "heading": "Overview",
+        "text": "I had the amazing opportunity to work at the Brixwork Real Estate Marketing as a Front-end Web Developer for 4 months (Late August ~ Late December) for Fall 2022. The company creates carefully crafted websites for real estate professionals across North America. As someone who loves and take huge pride in craftmanship, this role was perfect for me to learn and grow as a developer. My job did not only consist of web development but also SEO on-site engineering, glimpse of DevOps and maintain cPanel host at root level."
+      },
+      "section_1": {
+        "object_1": {
+          "heading": "Main Project",
+          "text": "My main project was the custom website I made for a realtor Leslie McConnell who is an independent broker member of Engel & Volker in Vancouver, BC. This was my first full website project but second project as my first project was an upgrade from an existing client.",
+          "image": "",
+          "image_caption": ""
+        },
+        "object_2": {
+          "heading": "Project",
+          "text": "My project began after the client's approval of the website design sent by the designer team and is uploaded on Zeplin (product development tool). Once it is ready to code, I follow an initial website procedure which includes DNS check to ensure the server is pointing to the host server and connect to right FTP. As seen on the image 1, I run a command line to check whether the client server is pointing to the company's A record. With the help and guidance of senior developers, I was able to learn and start my first project which many modules were custom. After the coding was done, I went through three QA sessions with the senior designer and made changes accordingly.",
+          "image": "https://james-yoo-portfolio.vercel.app/static/media/server-point.7c733599a8cb2b075aa5.png",
+          "image_caption": "Image 1 - A terminal command line to check whether the client server is pointing to the Brixwork server"
+        }
+      },
+      "section_2": {
+        "heading": "Challenges",
+        "text": "The website fetches data from the custom-made content-management-system (CMS) from the client admin backend (image 2) so client can change medias, add contents and texts. I was familiar with fetching datas from the backend but struggled to create dynamic front-end for clients as I wasn't too familiar with the work infrastructure. I mainly struggled to style different divs so I initially hard-coded.\nWith the help of co-workers and supervisor Jeff, I felt more comfortable with dynamic fetching and style individual divs as needed. As I started to ask more questions and practice more, I was able to generate functional customs to loop through to complete tasks in a shorter amount of time (image 3)."
       }
     }
   ]

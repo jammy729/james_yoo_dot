@@ -39,6 +39,7 @@ const work_gallery = () => {
                 className="work_item"
                 style={{
                   backgroundImage: `url(${data.image})`,
+                  backgroundSize: "cover",
                 }}
               >
                 <div className="overlay dark"></div>

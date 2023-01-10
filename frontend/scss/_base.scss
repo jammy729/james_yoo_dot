@@ -4,6 +4,9 @@
   box-sizing: border-box; // 1
 }
 
+main {
+  margin-top: 2rem;
+}
 article,
 aside,
 dialog,
@@ -18,6 +21,10 @@ section {
   display: block;
 }
 
+caption {
+  font-size: 14px;
+}
+
 body,
 html {
   overscroll-behavior-y: none;
@@ -25,7 +32,8 @@ html {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #202023;
+  color: white;
 }
 
 h1,
@@ -36,7 +44,7 @@ h1,
   letter-spacing: 3px;
   line-height: 1.42;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
@@ -49,7 +57,7 @@ h2,
   letter-spacing: 2px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
@@ -62,7 +70,7 @@ h3,
   letter-spacing: 2px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
@@ -75,7 +83,7 @@ h4,
   letter-spacing: 1px;
   line-height: 1.4;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
@@ -87,7 +95,7 @@ h5,
   font-style: normal;
   letter-spacing: 0.56px;
   line-height: 1.4;
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
@@ -98,18 +106,18 @@ p,
   font-weight: 500;
   letter-spacing: normal;
   line-height: 1.44;
-  color: #000;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   &:link,
   &:visited,
   &:active,
   &:hover {
     text-decoration: none;
-    color: #000;
+    color: #fff;
   }
   &:hover {
     cursor: pointer;
@@ -154,13 +162,13 @@ div.btn {
   min-width: 18rem;
   padding: 0.53rem 0.55555rem;
   &.primary {
-    background-color: #373737;
-    color: white;
+    background-color: #fff;
+    color: #373737;
   }
 
   &.secondary {
-    border: 2px solid #373737;
-    color: black;
+    border: 2px solid #fff;
+    color: #fff;
   }
 }
 
@@ -168,9 +176,9 @@ div.btn {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  background-color: #373737;
+  background-color: #fff;
   padding: 3px 8px;
   border-radius: 8px;
-  color: white;
+  color: #373737;
   margin-right: 5px;
 }

@@ -29,6 +29,7 @@ const work_piece = () => {
     index++;
     console.log(counter);
   }
+  const newLocal = `counter`;
   return (
     <React.Fragment>
       <section id="work_layout" className="container-layout">
@@ -68,12 +69,62 @@ const work_piece = () => {
             </div>
             {/* work descriptions  */}
             <hr />
-            {data.writing.heading && (
+            {data.section_1 && (
               <>
                 <div>
-                  <img src={data.writing.image} alt="" />
-                  <h3>{data.writing.heading}</h3>
-                  <p>{data.writing.text1}</p>
+                  <img
+                    src={data.section_0?.image}
+                    alt={data.section_0?.image_caption}
+                    className="img-full"
+                  />
+                  <h3>{data.section_0?.heading}</h3>
+                  <p>{data.section_0?.text}</p>
+                </div>
+                <hr />
+              </>
+            )}
+            {data.section_1 && (
+              <>
+                {/* part 1 */}
+                <div>
+                  <h3>{data.section_1?.object_2.heading}</h3>
+                  <img
+                    src={data.section_1?.object_1.image}
+                    alt={data.section_1?.object_1.image_caption}
+                    className="img-full"
+                  />
+                  <p>{data.section_1?.object_1.text}</p>
+                </div>
+                {/* part 2 */}
+                <div>
+                  <h5>{data.section_1?.object_2.heading}</h5>
+                  <div className="img-container">
+                    <img
+                      src={data.section_1?.object_2.image}
+                      alt={data.section_1?.object_2.image_caption}
+                      className="img-full"
+                    />
+                    <caption style={{ display: "block" }}>
+                      {data.section_1?.object_2.image_caption}
+                    </caption>
+                  </div>
+                  <p>{data.section_1?.object_2.text}</p>
+                </div>
+                <hr />
+                {/* part 3 */}
+                <div>
+                  <h5>{data.section_1?.object_2.heading}</h5>
+                  <div className="img-container">
+                    <img
+                      src={data.section_1?.object_2.image}
+                      alt={data.section_1?.object_2.image_caption}
+                      className="img-full"
+                    />
+                    <caption style={{ display: "block" }}>
+                      {data.section_1?.object_2.image_caption}
+                    </caption>
+                  </div>
+                  <p>{data.section_1?.object_2.text}</p>
                 </div>
                 <hr />
               </>

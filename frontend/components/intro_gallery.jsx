@@ -4,6 +4,7 @@ const intro_gallery = ({
   image,
   name,
   role,
+  intro,
   primary_btn,
   primary_link,
   secondary_btn,
@@ -15,9 +16,12 @@ const intro_gallery = ({
         <img src={image} alt="" className="img-responsive" />
       </div>
       <div className="intro_name">
-        <h3>{name}</h3>
+        <h2>{name}</h2>
       </div>
       <div className="intro_role">{role}</div>
+      <div className="intro_about" id="p_style">
+        {intro}
+      </div>
       <a className="btn primary" href={primary_link}>
         {primary_btn}
       </a>

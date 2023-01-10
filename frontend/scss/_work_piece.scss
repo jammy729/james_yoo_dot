@@ -1,4 +1,7 @@
 section#work_layout {
+  .work_layout__container > div {
+    margin-bottom: 1rem;
+  }
   .work_layout__container {
     .work_header {
       display: flex;

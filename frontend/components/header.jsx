@@ -29,15 +29,15 @@ const header = () => {
         <div className="mobile_menu" onClick={() => setShow(!show)}>
           <div
             className="hamburger_menu"
-            style={{ backgroundColor: show ? "white" : "black" }}
+            style={{ backgroundColor: show ?? "white" }}
           ></div>
           <div
             className="hamburger_menu"
-            style={{ backgroundColor: show ? "white" : "black" }}
+            style={{ backgroundColor: show ?? "white" }}
           ></div>
           <div
             className="hamburger_menu"
-            style={{ backgroundColor: show ? "white" : "black" }}
+            style={{ backgroundColor: show ?? "white" }}
           ></div>
         </div>
         {show && (
