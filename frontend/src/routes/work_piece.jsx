@@ -22,14 +22,7 @@ const work_piece = () => {
   useEffect(() => {
     fetchDetails();
   }, []);
-  let index = 0;
-  let counter;
-  while (index < 10) {
-    counter = index;
-    index++;
-    console.log(counter);
-  }
-  const newLocal = `counter`;
+
   return (
     <React.Fragment>
       <section id="work_layout" className="container-layout">
