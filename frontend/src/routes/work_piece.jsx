@@ -76,7 +76,7 @@ const work_piece = () => {
               </>
             )}
             {data.section_1 && (
-              <>
+              <React.Fragment>
                 {/* part 1 */}
                 <div>
                   <h3>{data.section_1?.object_2.heading}</h3>
@@ -87,6 +87,7 @@ const work_piece = () => {
                   />
                   <p>{data.section_1?.object_1.text}</p>
                 </div>
+
                 {/* part 2 */}
                 <div>
                   <h5>{data.section_1?.object_2.heading}</h5>
@@ -103,6 +104,7 @@ const work_piece = () => {
                   <p>{data.section_1?.object_2.text}</p>
                 </div>
                 <hr />
+
                 {/* part 3 */}
                 <div>
                   <h5>{data.section_1?.object_2.heading}</h5>
@@ -112,14 +114,14 @@ const work_piece = () => {
                       alt={data.section_1?.object_2.image_caption}
                       className="img-full"
                     />
-                    <caption style={{ display: "block" }}>
+                    <figcaption style={{ display: "block" }}>
                       {data.section_1?.object_2.image_caption}
-                    </caption>
+                    </figcaption>
                   </div>
                   <p>{data.section_1?.object_2.text}</p>
                 </div>
                 <hr />
-              </>
+              </React.Fragment>
             )}
           </div>
         ))}
