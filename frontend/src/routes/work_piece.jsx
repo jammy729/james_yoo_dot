@@ -6,7 +6,6 @@ const work_piece = () => {
   const { id } = useParams();
   const [detail, setDetail] = useState([]);
   const [error, setError] = useState(null);
-  const count = 10;
 
   const fetchDetails = () => {
     axios
