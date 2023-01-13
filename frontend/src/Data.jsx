@@ -5,6 +5,6 @@ const data = [
   },
   {
     id: "visual-analytics",
-    text: "asdfsafasfd",
+    text: "asdfsafasfdfdfd",
   },
 ];
